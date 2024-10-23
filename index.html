@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript Events</title>
+
+        <link rel="stylesheet" href="style.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <style>
+            h3{
+                background-color: #c23616;
+                color: #fff;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 30px;
+                width: 500px;
+                margin: auto;
+                padding: 10px 0;
+                border-radius: 5px;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body onscroll="onScroll()">
+        <h3>JavaScript Events:</h3>
+        <button id="btn">Subscribe</button>
+
+        <button id="like" onclick="like()"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+
+        <h2 id="text"></h2>
+
+        <form action="" id="form" onkeypress="keyPress()">
+            <label for="">Name</label>
+            <input type="text" placeholder="Enter your Name" />
+
+            <label for="">Email</label>
+            <input type="email" placeholder="Enter your Email" />
+
+            <label for="">Message</label>
+            <textarea id="textarea" name="text" placeholder="Enter your Message"></textarea>
+
+            <input type="submit" value="Send Message" />
+        </form>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
